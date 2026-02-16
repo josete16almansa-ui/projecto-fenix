@@ -1,18 +1,20 @@
 import java.util.List;
-//*@param 
-// @return
-//  */
+
 
 public class ProcesadorUsuarios {
         private static final int NUMERO_INVITADO = 2;
     private static final int NUMER_ADMINISTRADOR = 1;
 
-    // Método con 'code smells': largo, números mágicos, malos nombres.
+    /**
+     * @param dataList Lista de usuarios en formato "nombre:rol"
+     * @return Cadena con los nombres agrupados en Admins e Invitados
+     */
+ 
+   
     public String procesarLista(List<String> dataList) {
         String admins = "";
         String invitados = "";
         
-
         for (String usuarios : dataList) {
             String[] rol = usuarios.split(":"); // Formato "nombre:rol"
             if (rol.length == 2) {
@@ -32,3 +34,4 @@ public class ProcesadorUsuarios {
         return "Admins: " + admins + " | Invitados: " + invitados;
     }
 }
+

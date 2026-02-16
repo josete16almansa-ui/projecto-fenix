@@ -1,10 +1,9 @@
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-public class PruebaUsuarios {
+public class ProcesadroUsuariosTest {
         @Test
     void testProcesarListaComportamientoActual() {
     ProcesadorUsuarios procesador = new ProcesadorUsuarios();
